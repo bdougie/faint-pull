@@ -7,6 +7,7 @@
 // }
 
 module.exports = robot => {
+  robot.log()
   robot.on('issue_comment.created', async context => {
     // return if you ain't suppose be here
     if (context.payload.comment.body.includes('.gipht')) {
